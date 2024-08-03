@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Sales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Car Sales</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#listings">Listings</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Our Car Listings</h2>
+        <p>Find your perfect car today!</p>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search cars...">
+            <button onclick="searchListings()">Search</button>
+        </div>
+    </section>
+
+    <section id="listings">
+        <h2>Featured Cars</h2>
+        <div class="listing">
+            <h3>2024 Tesla Model S</h3>
+            <img src="tesla1.jpg" alt="2024 Tesla Model S">
+            <p>Price: $85,000</p>
+            <button onclick="showDetails('2024 Tesla Model S', 'tesla_model_s.jpg', '$85,000')">More Details</button>
+        </div>
+        <div class="listing">
+            <h3>2023 Ford Mustang</h3>
+            <img src="ford2.jpg" alt="">
+            <p>Price: $45,000</p>
+            <button onclick="showDetails('2023 Ford Mustang', 'ford_mustang.jpg', '$45,000')">More Details</button>
+            <div>
+                <div class="listing">
+                    <h3>toyota supra mk4</h3>
+                    <img src="supra1.jpg" alt="supra1">
+                    <p>$165,000</p>
+                    <button onclick="showDetails('Toyota supra mk4', 'supra1.jpg', '$165,000')">More Details</button>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Car Sales Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
